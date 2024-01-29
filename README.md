@@ -1,13 +1,13 @@
 Documentation and Reflection
 
 Chosen Techniques and Rationale
-HSV Color Space: We utilized the HSV (Hue, Saturation, Value) color space for sky detection because it provides a more intuitive way to specify color ranges compared to RGB. This approach is effective in differentiating sky colors from other elements in the image.
+HSV Color Space: I utilized the HSV (Hue, Saturation, Value) color space for sky detection because it provides a more intuitive way to specify color ranges compared to RGB. This approach is effective in differentiating sky colors from other elements in the image.
 
-Gradient Magnitude Calculation: To identify the smooth regions characteristic of the sky, we calculated the gradient magnitude. The sky, typically being a smooth region, would have lower gradient values.
+Gradient Magnitude Calculation: To identify the smooth regions characteristic of the sky, I calculated the gradient magnitude. The sky, typically being a smooth region, would have lower gradient values.
 
 Morphological Operations: To refine the mask and remove small noise, morphological operations like closing and opening were applied.
 
-Contours Detection: We employed contour detection to identify continuous sky regions, further refining the detection process by considering the size and position of these regions.
+Contours Detection: I employed contour detection to identify continuous sky regions, further refining the detection process by considering the size and position of these regions.
 
 Combined Color and Gradient Masks: This method allowed us to leverage both color and texture information, improving the robustness of the detection, especially in challenging lighting conditions like sunsets.
 
@@ -33,8 +33,8 @@ Contours Detection:
 
 Challenges and Solutions
 
-Diverse Sky Conditions: Different lighting conditions, like sunsets, posed a challenge. We addressed this by including multiple color ranges (e.g., for blue sky and sunset).
-False Positives: Elements like mountains were initially misidentified as the sky. We mitigated this by using gradient information and refining HSV thresholds.
+Diverse Sky Conditions: Different lighting conditions, like sunsets, posed a challenge. I addressed this by including multiple color ranges (e.g., for blue sky and sunset).
+False Positives: Elements like mountains were initially misidentified as the sky. I mitigated this by using gradient information and refining HSV thresholds.
 
 Reflection
 
@@ -51,5 +51,5 @@ Potential Improvements: Further optimization of the HSV color threshold settings
 Learning Outcomes
 
 This project provided a practical application of image processing, deepening our understanding of concepts like color spaces, gradient computation, morphological operations, and contour detection.
-We learned how to adjust and test different image processing techniques based on practical scenarios and how to combine these techniques to address specific problems.
-Through hands-on experience, we realized the limitations of algorithms under different conditions and the necessity to continue learning and exploring, especially in the field of machine learning.
+I learned how to adjust and test different image processing techniques based on practical scenarios and how to combine these techniques to address specific problems.
+Through hands-on experience, I realized the limitations of algorithms under different conditions and the necessity to continue learning and exploring, especially in the field of machine learning.
